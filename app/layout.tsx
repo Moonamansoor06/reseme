@@ -1,6 +1,6 @@
 import './globals.css'
 import { personalData,aboutMe, skills,professionalData } from '@/data/page-data'
-import SideBar from './components/sideBar'
+
 import Footer from './components/footer'
 import Header from './components/header'
 
