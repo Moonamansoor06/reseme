@@ -11,8 +11,8 @@ export default function Experience() {
                <div className="text-rosyblack box-border h[600]- w-[300] p-8 flex flex-col  ">
                 <h2 className="mb-2 ">Projects</h2>
                 
-                    {projects.map((pr)=>{
-                      return <div><h3 className="text-rosyblack  flex flex-col  ">{pr.tool} :  </h3>
+                    {projects.map((pr,i)=>{
+                      return <div key={i}><h3 className="text-rosyblack  flex flex-col  ">{pr.tool} :  </h3>
                     <div>{pr.links.map((link)=>{
                       return <div>{link}</div>})}</div>
                     </div>
