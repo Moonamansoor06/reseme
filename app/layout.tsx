@@ -1,5 +1,5 @@
 import './globals.css'
-import { personalData,aboutMe, skills,professionalData } from '@/data/page-data'
+
 
 import Footer from './components/footer'
 import Header from './components/header'
