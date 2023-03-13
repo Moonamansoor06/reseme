@@ -1,4 +1,9 @@
 import './globals.css'
+import { personalData,aboutMe, skills,professionalData } from '@/data/page-data'
+import SideBar from './components/sideBar'
+import Footer from './components/footer'
+import Header from './components/header'
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,9 +15,16 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body >
+      
+       <Header/>
+        {children}
+         <Footer/>
+      </body>
+     
     </html>
   )
 }

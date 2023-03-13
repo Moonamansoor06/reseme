@@ -1,91 +1,44 @@
+
+import { personalData } from "@/data/page-data"
+import { aboutMe } from "@/data/page-data";
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
+  const { name, role, education, contactLinks } = personalData;
+  const {title,body} =aboutMe
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className='[312px]:flex-col sm:flex md:flex justify-evenly mb-20 h-full'>
+      
+      <div className="text-rosyblack flex flex-col  items-left  md:w-[60%] " >
+        <div className="text-rosyblack  flex flex-col  items-center">
+        <h1 className="mb-2 ">{name}</h1>
+        <h2 className="mb-2">{role}</h2>
+        <div className=" flex items-center">
+        {body.map((b:any,i:number)=>{
+          return <p key={i} className=" ">{b}</p>})}
         </div>
+        <h2 className="mb-2 mt-4 ">Qualification</h2>
+        {education.map((edu: any, i: number) => {
+          return (
+            <p key={i} className="font-bold mb-2">
+              {edu}
+            </p>
+          );
+        })}
       </div>
-
-      <div className={styles.center}>
+      </div>
+      <div className='flex mt-10 '>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
           priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
+          width={400}
+          height={400}
+          className="animate-pulse rounded-xl h-full mb-6"
+          src="/dev.jpg"
+          alt=""
+        /> 
         </div>
-      </div>
+    
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+ </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
   )
 }
