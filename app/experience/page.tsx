@@ -13,8 +13,8 @@ export default function Experience() {
                 
                     {projects.map((pr,i)=>{
                       return <div key={i}><h3 className="text-rosyblack  flex flex-col  ">{pr.tool} :  </h3>
-                    <div>{pr.links.map((link)=>{
-                      return <div>{link}</div>})}</div>
+                    <div>{pr.links.map((link,i)=>{
+                      return <div key={i}>{link}</div>})}</div>
                     </div>
                     })
                       
