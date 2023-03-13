@@ -11,13 +11,13 @@ export default function Skill() {
                 <div className="text-rosyblack  md:flex sm:flex [312]:flex-col   ">
                <div className="text-rosyblack box-border h[600]- w-[300] p-4 flex flex-col  ">
                 <h2 className="mb-2 ">Soft Skills</h2>
-                 {soft.map((sk)=>{
-                      return <div className="text-rosyblack  flex items-center   "> <p className='m-2' >{sk.icon}</p> <p>{sk.text}</p>    </div>})}
+                 {soft.map((sk,i)=>{
+                      return <div key={i}className="text-rosyblack  flex items-center   "> <p className='m-2' >{sk.icon}</p> <p>{sk.text}</p>    </div>})}
                    </div>
                    <div className="text-rosyblack  box-border h[600]- w-[300] p-4 flex flex-col  ">
                       <h2 className="mb-2 ">Hard Skills</h2>
-                   {hard.map((hsk)=>{
-                        return <div className="text-rosyblack  flex items-center "><p className='m-2' >{hsk.icon}</p> <p>{hsk.text}</p>   </div>})}
+                   {hard.map((hsk,i)=>{
+                        return <div key={i} className="text-rosyblack  flex items-center "><p className='m-2' >{hsk.icon}</p> <p>{hsk.text}</p>   </div>})}
                     </div>
                 </div> 
                  </div>
