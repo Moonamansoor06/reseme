@@ -4,7 +4,7 @@ import { personalData } from "@/data/page-data";
 const Footer = () => {
     const {  contactLinks } = personalData;
   return (
-    <footer className= 'flex mb-4 flex-col items-center'>
+    <footer className= 'flex mt-8 mb-4 flex-col items-center'>
         <div className=" text-rosy flex  ">
      
           

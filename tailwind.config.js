@@ -35,8 +35,14 @@ module.exports = {
 			"6xl": "3.5rem",
 		},
 		extend: {
+		fontFamily:{
+			head1Main:["'Courgette', cursive"],
+			head2Main:["'Barlow Condensed', sans-serif"],
+			navFont:["'MonteCarlo', cursive"],
+		}
 		
-		},
+	},
+		
 	},
 	plugins: [],
 };

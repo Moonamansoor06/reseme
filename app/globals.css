@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kalam&family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Courgette&family=Kalam&family=MonteCarlo&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,13 +8,13 @@
 
 @layer base {
 	h1 {
-		@apply  text-4xl sm:text-6xl;
+		@apply  text-2xl sm:text-4xl md:text-6xl lg:text-6xl;
 	}
 	h2 {
-		@apply text-2xl;
+		@apply text-lg sm:text-xl md:text-2xl lg:text-4xl;
 	}
 	h3 {
-		@apply text-lg;
+		@apply text-lg sm:text-xl md:text-2xl lg:text-4xl;
 	}
 	h4 {
 		@apply text-base;
@@ -26,27 +29,4 @@
 	h4 {
 		@apply font-display;
 	}
-	html {
-		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	}
-}
-
-.icons-contactme {
-	@apply text-2xl m-2;
-}
-
-section {
-	@apply mb-10;
-}
-
-main h2 {
-	@apply uppercase ;
-}
-
-.btn {
-	@apply w-1/2 h-12  font-display uppercase text-xl px-4 transition ease-in-out hover:bg-rosyblack duration-200;
-}
-
-.skill {
-	@apply  text-lg py-2 px-4 w-fit rounded-md;
 }

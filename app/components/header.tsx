@@ -3,29 +3,26 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-<header>
-<div className="text-rosy sm:flex md:flex md:justify-between sm:justify-between [312]:flex  p-10 ">
-    <div className=' [312]:flex sm:flex md:flex  '>
+<section>
+<div className="text-rosy flex justify-between ">
+    <div className=' flex-shrink-0 transform skew-y-6 '>
         <Image
           priority
-          width={100}
-          height={100}
+          width={80}
+          height={80}
           className="rounded-xl h-full mb-6"
           src="/logo3.jpg"
           alt=""
         /> 
         </div>
-        <div className='text-rosy flex [312]:justify-left md:justify-between sm:justify-between'>
-        <p className='p-4'> <Link  href="/" >Home</Link></p>
-        <p className='p-4'> <Link  href="/skill" >Skills</Link></p>
-        <p className='p-4'> <Link  href="/experience" >Experience</Link></p>
+        <ul className='text-rosy flex [312]: mx-5 font-navFont font-extrabold '>
+        <li className='p-4 text-2xl'> <Link  href="/" >Home</Link></li>
+        <li className='p-4 text-2xl'> <Link  href="/skill" >Skills</Link></li>
+        <li className='p-4 text-2xl'> <Link  href="/experience" >Experience</Link></li>
             
-
-
-     
+        </ul>
         </div>
-        </div>
-</header>
+</section>
   )
 }
 
