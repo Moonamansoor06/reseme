@@ -6,7 +6,7 @@ export default function Skill() {
   const {soft,hard}=skills 
  
   return (
-    <div className='flex mt-20 justify-evenly h-[90%]'>
+    <div className='[312px]:flex-col sm:flex md:flex justify-evenly h-[90%]'>
     <div className="text-rosyblack flex   items-left h-[90%]" >
                 <div className="text-rosyblack  md:flex sm:flex [312]:flex-col   ">
                <div className="text-rosyblack box-border h[600]- w-[300] p-4 flex flex-col  ">
