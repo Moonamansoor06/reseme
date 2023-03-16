@@ -5,7 +5,7 @@ export default function Experience() {
   const {projects}=priorExperience
  
   return (
-    <div className='[312px]:flex-col sm:flex md:flex justify-evenly mt-20 '>
+    <div className='[312px]:flex-col sm:flex md:flex justify-evenly mt-10 '>
     <div className="text-rosyblack flex   items-left" >
                 <div className="text-rosyblack  md:flex sm:flex [312]:flex-col   ">
                <div className="text-rosyblack box-border h[600]- w-[300] pl-8 flex flex-col  ">
