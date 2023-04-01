@@ -1,3 +1,8 @@
+import { FaAws,FaReact } from 'react-icons/fa';
+import { GrGatsbyjs } from 'react-icons/gr';
+import { SiNextdotjs,SiTypescript,SiJavascript } from 'react-icons/si';
+import { GiBackwardTime } from 'react-icons/gi';
+
 export const personalData = {
 	name: "Moona Mansoor",
 	role: "Software Engineer",
@@ -24,20 +29,20 @@ export const aboutMe = {
 
 export const skills = {
 	soft: [
-		{ icon: "👂🏼", text: "Active Listening" },
-		{ icon: "💬", text: "Effective Communication" },
-		{ icon: "👥", text: "Collaboration" },
-		{ icon: "⽓", text: "Teamwork" },
-		{ icon: "💡", text: "Creative Problem Solving" },
-		{ icon: "⌛️", text: "Time management" },
+		{ icon: "listening.png", text: "Active Listening" },
+		{ icon: "comm.png", text: "Effective Communication" },
+		{ icon: "col.png", text: "Collaboration" },
+		{ icon: "team.png", text: "Teamwork" },
+		{ icon: "ps.png", text: "Creative Problem Solving" },
+		{ icon: "time.png", text: "Time management" },
 	],
 	hard: [
-		{ icon: "💻", text: "Javascript" },
-		{ icon: " TS..  ", text: "TypeScript" },
-		{ icon: "🚀", text: "React" },
-		{ icon: "💾", text: "Gatsby" },
-		{ icon: "💾", text: "Nextjs" },
-		{ icon: "📈", text: "AWS" },
+		{ icon: "js.png", text: "Javascript" },
+		{ icon: "ts.png ", text: "TypeScript" },
+		{ icon: "react.png", text: "React" },
+		{ icon: "gatsby.png", text: "Gatsby" },
+		{ icon: "next.png", text: "Nextjs" },
+		{ icon: "aws.png", text: "AWS" },
 	],
 };
 
@@ -66,14 +71,45 @@ export const professionalData = {
 	],
 };
 export const priorExperience={
-projects:[{	tool:"React",
-	       links:["https://my-mart9a.netlify.app"]},
-		   {tool:"Gatsby",
-		     links:["https://kaafassociates.netlify.app","https://ecomm-project-03.netlify.app"]},
-			 {tool:"nextjs",
-			links:["https://panaverse-blue.vercel.app/"]},
-			{tool:"typescript",
-		links:["https://my-typescript-quiz.netlify.app","npx moontodocli","npx moonclicalc","npx moon-number-guess"]},
+projects:[ 
+	{id:1,
+	name:"MyMart",
+	tool:"React",
+	image:"mymart.jpg",
+	github:"https://my-mart9a.netlify.app",
+	live:"https://my-mart9a.netlify.app",
+},
+	{id:2,
+	name:"KaafAssociates",
+	tool:"Gatsby",
+	image:"kaaf.jpg",
+	github:"https://kaafassociates.netlify.app",
+	live:"https://kaafassociates.netlify.app",
+},
+	{
+		id:3,
+	name:"EcommProject",
+	tool:"Gatsby",
+	image:"ecomm.jpg",
+	github:"https://ecomm-project-03.netlify.app",
+	live:"https://ecomm-project-03.netlify.app",
+},
+{
+	id:4,
+name:"Panaverse",
+tool:"Nexjs",
+image:"panaverse.jpg",
+github:"https://panaverse-blue.vercel.app/",
+live:"https://panaverse-blue.vercel.app/",
+},
+{
+	id:5,
+name:"Quiz",
+tool:"Typescript",
+image:"typescript.jpg",
+github:"https://my-typescript-quiz.netlify.app",
+live:"https://my-typescript-quiz.netlify.app",
+},
 
 	]
 }

@@ -16,9 +16,9 @@ const Header = () => {
         /> 
         </div>
         <ul className='text-rosy flex [312]: mx-5 font-navFont font-extrabold '>
-        <li className='p-4 text-2xl'> <Link  href="/" >Home</Link></li>
-        <li className='p-4 text-2xl'> <Link  href="/skill" >Skills</Link></li>
-        <li className='p-4 text-2xl'> <Link  href="/experience" >Experience</Link></li>
+        <li className='p-4 text-2xl'> <Link  href="#home" >Home</Link></li>
+        <li className='p-4 text-2xl'> <Link  href="#skill" >Skills</Link></li>
+        <li className='p-4 text-2xl'> <Link  href="#experience" >Experience</Link></li>
             
         </ul>
         </div>

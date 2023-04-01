@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kalam&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kalam&family=MonteCarlo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Courgette&family=Kalam&family=MonteCarlo&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,4 +30,5 @@
 	h4 {
 		@apply font-display;
 	}
+	
 }
