@@ -1,7 +1,9 @@
+import {ScrollLink} from './ScrollLink'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const Header = () => {
+ 
   return (
 <section>
 <div className="text-rosy flex justify-between ">
@@ -16,9 +18,10 @@ const Header = () => {
         /> 
         </div>
         <ul className='text-rosy flex [312]: mx-5 font-navFont font-extrabold '>
-        <li className='p-4 text-2xl'> <Link  href="#home" >Home</Link></li>
-        <li className='p-4 text-2xl'> <Link  href="#skill" >Skills</Link></li>
-        <li className='p-4 text-2xl'> <Link  href="#experience" >Experience</Link></li>
+        <li className='p-4 text-2xl'> <ScrollLink className='btn'  href="#home" >Home</ScrollLink></li>
+        <li className='p-4 text-2xl'> <ScrollLink className='btn'  href="#skill" >Skills</ScrollLink></li>
+        <li className='p-4 text-2xl'> <ScrollLink className='btn'  href="#experience" >Experience</ScrollLink></li>
+        <li className='p-4 text-2xl'> <ScrollLink className='btn'  href="#contact" >Contact</ScrollLink></li>
             
         </ul>
         </div>

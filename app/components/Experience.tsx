@@ -32,20 +32,19 @@ const Experience = () => {
                 <div
                   key={index}
                   className="shadow-lg  group container rounded-md 
-                        flex justify-center text-center items-center
-                         mx-auto content-div "
+                        flex flex-col justify-center text-center items-center
+                         mx-auto  hover:scale-105 duration-75"
+                 
                 >
-                  <div className="">
-                    <span className="opacity-0 group-hover:opacity-100 text-2xl font-head2Main font bold text-rosyblack tracking-wider ">
+                  <div style={{ backgroundImage: `url(${item.image})` }}
+                   className="opacity-100 group-hover:opacity-80  bg-cover w-full h-60" >
+                       </div> 
+                    
+                    <div className="flex flex-col justify-evenly items-center opacity-0 group-hover:opacity-100 text-2xl font-head2Main font bold text-rosyblack tracking-wider ">
+                     <div className="block  text-2xl font-head2Main font bold text-rosyblack tracking-wider ">
                       {item.name}
-                    </span>
-                    <img
-                      className="h-full opacity-100 group-hover:opacity-80 flex items-stretch"
-                      src={img}
-                      alt=""
-                    />
-                    <div className="opacity-0 group-hover:opacity-100 text-2xl font-head2Main font bold text-rosyblack tracking-wider ">
-                      <div className=" text-center ">
+                    </div>
+                     <div className=" text-center ">
                         <a href={item.github} target="_blank">
                           <button
                             className="text-center rounded-lg px-4 py-3 m-2
@@ -66,7 +65,7 @@ const Experience = () => {
                         </a>
                       </div>
                     </div>
-                  </div>
+              
                 </div>
               );
             })}

@@ -1,9 +1,9 @@
 import { personalData } from "@/data/page-data";
 import { aboutMe } from "@/data/page-data";
 import Image from "next/image";
+import {NextPage} from 'next'
 
-
-export default function Home() {
+ const Home:NextPage=()=> {
   const { name, role, education, contactLinks } = personalData;
   const { title, body } = aboutMe;
   return (
@@ -50,3 +50,4 @@ export default function Home() {
     </div></div>
   );
 }
+export default Home

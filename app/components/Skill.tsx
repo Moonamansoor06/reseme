@@ -28,7 +28,7 @@ let img:string
           return (
             <div key={i} className=" flex justify-center items-center  ">
               <div className="flex flex-col font-head2Main items-center p-2 shadow-md  h-40 w-60 hover:scale-105 duration-75 ">
-               <Image src={img} width={80} height={80} className="text-4xl flex justify-center items-center"/>
+               <Image alt="" src={img} width={80} height={80} className="text-4xl flex justify-center items-center"/>
                  <p className="text-lg flex justify-center items-center">{sk.text}</p>
               </div>
              
@@ -44,7 +44,7 @@ let img:string
          return (
               <div key={i} className="   flex justify-center items-center  ">
                 <div className="flex flex-col font-head2Main items-center p-2 shadow-md shadow-gray-600 h-40 w-60 hover:scale-105 duration-75 ">
-                <Image src={img} width={80} height={80} className="text-4xl flex justify-center items-center"/>
+                <Image  alt="" src={img} width={80} height={80} className="text-4xl flex justify-center items-center"/>
                    <p className="text-xl flex justify-center items-center">{hsk.text}</p>
                 </div>
                

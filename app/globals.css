@@ -8,6 +8,7 @@
 
 
 @layer base {
+	
 	h1 {
 		@apply  text-2xl sm:text-4xl md:text-6xl lg:text-6xl;
 	}
