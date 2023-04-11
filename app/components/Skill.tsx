@@ -42,8 +42,8 @@ export default function Skill() {
                   <Image
                     alt=""
                     src={img}
-                    width={80}
-                    height={80}
+                    width={100}
+                    height={100}
                     className="text-4xl flex justify-center items-center"
                   />
                   <p className="text-lg flex justify-center items-center">
