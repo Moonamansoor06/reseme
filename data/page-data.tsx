@@ -22,7 +22,7 @@ export const personalData = {
 export const aboutMe = {
 	title: "About Me",
 	body: [
-		"As a highly motivated and driven individual with a passion for making a positive impact,  I am able to tackle complex problems with ease,  able to face challenges.",
+		"I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative. I am able to tackle complex problems with ease.",
 		
 	],
 };
@@ -46,30 +46,7 @@ export const skills = {
 	],
 };
 
-export const professionalData = {
-	title: "Professional Experience",
-	experiences: [
-		{
-			role: "Data Scientist, Acme Inc. (2021-Present)",
-			description:
-				"Design and implement machine learning models to analyze large datasets and drive business decisions. Collaborate with cross-functional teams to develop and launch new products and features. Provide technical guidance and mentorship to junior data scientists. Conduct regular presentations to stakeholders on the findings and insights generated from data analysis.",
-			current: true,
-		},
 
-		{
-			role: "Machine Learning Engineer, XYZ Corp. (2019-2021)",
-			description:
-				"Designed and implemented advanced machine learning algorithms to improve predictive accuracy and performance. Built and maintained scalable machine learning infrastructure using cloud computing platforms. Conducted data exploratory analysis to identify potential use cases and opportunities. Participated in regular code reviews to maintain high quality standards.",
-			current: false,
-		},
-		{
-			role: "Machine Learning Engineer, ABX Corp. (2020-2021)",
-			description:
-				"Designed and implemented advanced machine learning algorithms to improve predictive accuracy and performance. Built and maintained scalable machine learning infrastructure using cloud computing platforms. Conducted data exploratory analysis to identify potential use cases and opportunities. Participated in regular code reviews to maintain high quality standards.",
-			current: false,
-		},
-	],
-};
 export const priorExperience={
 projects:[ 
 	{id:1,

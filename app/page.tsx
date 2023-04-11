@@ -8,10 +8,11 @@ import Skill from "./components/Skill";
 export default function Page() {
  return(
  <div>
-  <Home/>
-  <Skill/>
+
+   <Home/>
+ <Skill/>
   <Experience/>
-  <Contact/>
+
     </div>
   );
 }

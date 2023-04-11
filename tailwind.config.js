@@ -18,7 +18,8 @@ module.exports = {
 			"rosypink": "#eab3b7",
 			"rosywhite": "#f1d7d8",
 			white: "#fff",
-			gray:"#f8f8fa"
+			gray:"#f8f8fa",
+			black:"black"
 		},
 		fontFamily: {
 			sans: ["Georgia", "sans-serif"],

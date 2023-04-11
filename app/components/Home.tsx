@@ -7,21 +7,17 @@ import {NextPage} from 'next'
   const { name, role, education, contactLinks } = personalData;
   const { title, body } = aboutMe;
   return (
-    <div>
-    <div className="  md:flex justify-evenly mt-20 mb-40  ml-8 h-full sm:h-full md:h-full lg:h-full"
-    id="home"
-    >
-      <div className="text-rosyblack flex flex-col  items-center  md:w-[60%] ">
-          <h1 className="font-head1Main">
-
-            {name}</h1>
-          <h3 className="mb-2 font-head2Main">
-            
-            {role}</h3>
-          
-            {body.map((b: any, i: number) => {
+    
+    <div className="md:flex md:pt-10 justify-between  mr-4 ml-4 mb-40 md:mb-20 h-full"
+    id="home">
+      {/* left side div */}
+      <div className="text-rosyblack mt-14 flex flex-col md:w-[65%]  items-center ">
+          <h1 className="font-head1Main">{name}</h1>
+          <h3 className="mb-2 font-head2Main"> {role}</h3>
+          {body.map((b: any, i: number) => {
               return (
-                <p key={i} className=" animate-[type_3s_steps(1)_1s_forwards_infinite] font-semibold self-center text-center mx-auto  ">
+                <p key={i} className=" animate-[type_3s_steps(1)_1s_forwards_infinite]
+                 font-semibold self-center text-center mx-auto md:w-[65%]  ">
                   {b}
                 </p>
               );
@@ -36,18 +32,20 @@ import {NextPage} from 'next'
             );
           })}
         </div>
-      
-      <div className="flex mt-10 [312]:mt-8 sm:flex sm:items-center sm:justify-center sm:mr-4 md:mt-10 lg:mt-10">
+      {/* left div closed and right side div start */}
+      <div className="mt-10 justify-center md:w-[45%] ">
         <Image
           priority
-          width={400}
-          height={400}
+          width={800}
+          height={800}
           className="animate-pulse rounded-xl h-full mb-6"
           src="/dev.jpg"
           alt=""
         />
       </div>
-    </div></div>
+      {/* right div closed */}
+    </div>
+    
   );
 }
 export default Home
