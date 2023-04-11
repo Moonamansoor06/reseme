@@ -38,7 +38,7 @@ export const skills = {
 	],
 	hard: [
 		{ icon: "js.png", text: "Javascript" },
-		{ icon: "ts.png ", text: "TypeScript" },
+		{ icon: "typescript.png ", text: "TypeScript" },
 		{ icon: "react.png", text: "React" },
 		{ icon: "gatsby.png", text: "Gatsby" },
 		{ icon: "next.png", text: "Nextjs" },
