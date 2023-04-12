@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div
       className="h-auto z-20 sticky inset-0 backdrop-blur-md py-3 
-       bg-opacity-90 text-rosy flex justify-between w-[90%] lg:w-full "
+       bg-opacity-90 text-rosy flex justify-between "
     >
       <div className=" flex-shrink-0 transform skew-y-6 w-20 h-16  md:h-20 md:w-20">
         <Image
@@ -104,7 +104,7 @@ const Header = () => {
           className={`${isMenuOpen ? "block" : "hidden"} lg:hidden`}
           id="mobile-menu"
         >
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="px-2 pt-2 pb-3" >
             <ScrollLink
               href="#home"
               className="btn  hover:bg-gray-700  block px-3 py-2 rounded-md text-base font-bold"

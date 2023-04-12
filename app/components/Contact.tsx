@@ -1,8 +1,8 @@
 export default function ContactComponent() {
   return (
     <div
-      className="md:flex md:pt-10 justify-between  
-        mr-4 ml-4 mb-40 mt-20 h-full "
+      className="flex flex-col md:flex-col md:pt-10 justify-between  
+        mr-4 ml-4 mt-20 mb-20  md:mb-5 md:mt-5 h-full text-rosyblack"
       id="contact"
     >
       <h1 className="text-center text-2xl md:text-4xl font-head1Main ">
